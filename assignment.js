@@ -179,6 +179,86 @@ duck_duck_goose([$a, $b, $c, $d], 4); // => $d["name"]
 // console.log(duck_duck_goose([a, b, c, d], 4)); // Output: Player D
 //////////////////////////////////////
 /*
- 
+8 kyu
+Get Planet Name By ID
 
+ DESCRIPTION:
+The function is not returning the correct values. Can you figure out why?
+
+Example (Input --> Output ):
+
+3 --> "Earth"
+
+
+function getPlanetName(id) {
+  switch (id) {
+    case 1:
+      return (name = "Mercury");
+    case 2:
+      return (name = "Venus");
+    case 3:
+      return (name = "Earth");
+    case 4:
+      return (name = "Mars");
+    case 5:
+      return (name = "Jupiter");
+    case 6:
+      return (name = "Saturn");
+    case 7:
+      return (name = "Uranus");
+    case 8:
+      return (name = "Neptune");
+    default:
+      return "No player found";
+  }
+}
+console.log(getPlanetName(3));
+
+
+/////
+function getPlanetName(id){
+  return {
+    1: 'Mercury',
+    2: 'Venus',
+    3: 'Earth',
+    4: 'Mars',
+    5: 'Jupiter',
+    6: 'Saturn',
+    7: 'Uranus',
+    8: 'Neptune'
+  }[id]
+}
  */
+
+/*
+8kyu
+#Find the Remainder
+DESCRIPTION:
+Task:
+Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+
+Division by zero should return NaN.
+
+Examples:
+n = 17
+m = 5
+result = 2 (remainder of `17 / 5`)
+
+n = 13
+m = 72
+result = 7 (remainder of `72 / 13`)
+
+n = 0
+m = -1
+result = 0 (remainder of `0 / -1`)
+
+n = 0
+m = 1
+result - division by zero (refer to the specifications on how to handle this in your language)
+
+function remainder(n, m) {
+  return n > m ? n % m : m % n;
+}
+console.log(remainder(13, -11));
+
+*/
